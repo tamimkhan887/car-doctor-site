@@ -4,7 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
-import { AuthContext } from "../../ContextProvider/contextContainer";
+import { AuthContext } from "../../ContextProvider/ContextContainer";
 import axios from "axios";
 
 const Login = () => {

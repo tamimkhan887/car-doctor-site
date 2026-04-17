@@ -3,7 +3,7 @@ import { Link, Links } from 'react-router-dom';
 import logo from "../assets/logo.svg"
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { GoSearch } from "react-icons/go";
-import { AuthContext } from '../ContextProvider/contextContainer';
+import { AuthContext } from '../ContextProvider/ContextContainer';
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../ContextProvider/contextContainer";
+import { AuthContext } from "../../ContextProvider/ContextContainer";
 import CartDetails from "./CartDetails";
 import axios from "axios";
 

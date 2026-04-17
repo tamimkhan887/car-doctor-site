@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AuthContext } from './contextContainer';
+import { AuthContext } from './ContextContainer';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import auth from '../Firebase/firebase.config';
 const AuthProvider = ({children}) => {

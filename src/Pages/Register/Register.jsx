@@ -4,7 +4,7 @@ import { LiaFacebookF } from "react-icons/lia";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../../ContextProvider/contextContainer';
+import { AuthContext } from '../../ContextProvider/ContextContainer';
 
 const Register = () => {
     const {createUser} = useContext(AuthContext)

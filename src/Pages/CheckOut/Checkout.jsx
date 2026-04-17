@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { AuthContext } from '../../ContextProvider/contextContainer';
+import { AuthContext } from '../../ContextProvider/ContextContainer';
 
 const Checkout = () => {
     const service = useLoaderData();
