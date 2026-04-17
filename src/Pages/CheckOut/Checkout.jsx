@@ -23,7 +23,7 @@ const Checkout = () => {
             img
             
         }
-        fetch("http://localhost:5000/bookings" , {
+        fetch(`${import.meta.env.VITE_API_URL}/bookings` , {
             method: "POST",
             headers:{
                 'content-type' : 'application/json'

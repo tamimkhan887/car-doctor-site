@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         },{
           path: '/services/:id',
           element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
-          loader : ({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+          loader : ({params})=> fetch(`${import.meta.env.VITE_API_URL}/services/${params.id}`)
         },
         {
           path: "/cart",

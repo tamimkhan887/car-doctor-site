@@ -24,7 +24,7 @@ const Login = () => {
             .then(() => {
                 form.reset();
                 const user = { email }
-                    axios.post("http://localhost:5000/jwt" , user , {withCredentials: true} )
+                    axios.post(`${import.meta.env.VITE_API_URL}/jwt` , user , {withCredentials: true} )
                     .then(res=>{
                         if(res.data.success){
                             navigate(location?.state ? location.state : "/")

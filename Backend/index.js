@@ -11,11 +11,16 @@ const cookieParser = require('cookie-parser')
 // middleware
 
 app.use(cors({
-  origin: ["http://localhost:5173"],
+  origin: [
+    "http://localhost:5173",
+    "https://car-doctor-site.vercel.app",
+    /\.vercel\.app$/
+  ],
   credentials: true
 }))
 app.use(express.json())
 app.use(cookieParser())
+
 
 const uri = `mongodb://${process.env.DB_user}:${process.env.DB_Pass}@ac-owba27t-shard-00-00.mrwdf0b.mongodb.net:27017,ac-owba27t-shard-00-01.mrwdf0b.mongodb.net:27017,ac-owba27t-shard-00-02.mrwdf0b.mongodb.net:27017/?ssl=true&replicaSet=atlas-ijpwm3-shard-0&authSource=admin&appName=Cluster0`;
 
@@ -144,3 +149,5 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+module.exports = app;
